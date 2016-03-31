@@ -1,0 +1,10 @@
+﻿@model IEnumerable<AjaxDemo.Models.Destination>
+
+<h2>Where I've been</h2>
+<ul>
+    @foreach(var destination in Model)
+    {
+        <li>@Html.DisplayFor(modelItem => destination.City), @Html.DisplayFor(modelItem => destination.Country)</li>
+
+    }
+</ul>
